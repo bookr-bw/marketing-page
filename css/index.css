@@ -246,7 +246,6 @@ footer p {
 .book h3,
 .book h4 {
   color: black;
-  margin-top: 3%;
 }
 .book span {
   color: #FCE181;
@@ -256,6 +255,9 @@ footer p {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
+}
+.book .books div a img {
+  margin: 4% auto;
 }
 .book .books article {
   margin: 3% 5%;
