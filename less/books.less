@@ -3,6 +3,13 @@
         text-align: center;
         font-size: 2.2rem;
     }
+    h3, h4{
+        color:black;
+    }
+    span{
+        color:@lighter;
+        font-size:2rem;
+    }
     margin: 1% 2%;
     .books{
         display: flex;
@@ -11,6 +18,16 @@
         article{
             margin: 3% 5%;
             width: 20%;
+
+            .shrink{
+                width: 44%;
+                @media @tablet{
+                    width:65%;
+                }
+                @media @mobile{
+                    width:100%;
+                }
+            }
         }
     }
-}
+ }

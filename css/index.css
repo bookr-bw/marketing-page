@@ -129,13 +129,36 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
+
+html body {
   font-size: 1.6rem;
+  color: #9FEDD7;
+  background-color: #026670;
+}
+html body .container {
+  background-color: #EDEAE5;
+  color: #026670;
+  text-align: center;
+}
+html body .container h2 {
+  font-size: 2.8rem;
+  padding: 4%;
+}
+html body h4 {
+  font-size: 2rem;
 }
 header {
   text-align: center;
 }
 header nav {
+
+  margin: 3% auto;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 2% 5%;
+  color: #FCE181;
   margin: 2% auto;
 }
 header nav a {
@@ -143,17 +166,28 @@ header nav a {
   color: black;
   font-size: 1.8rem;
   padding: 2% 5%;
+
 }
 header div {
   margin: 3%;
 }
 header div h1 {
-  font-size: 4.2rem;
-  margin-bottom: 1%;
+  font-size: 4.8rem;
+  margin-bottom: 2%;
 }
 header div p {
-  font-size: 2.1rem;
+  font-size: 2.6rem;
 }
+@media (max-width: 500px) {
+  header div p {
+    font-size: 2rem;
+  }
+}
+.headerpg2 h1 {
+  font-size: 4.8rem;
+  padding: 1%;
+}
+
 footer {
   text-align: center;
 }
@@ -162,9 +196,9 @@ footer nav {
 }
 footer nav a {
   text-decoration: none;
-  color: black;
-  font-size: 1.8rem;
-  padding: 2% 3%;
+  font-size: 1.6rem;
+  padding: 2% 5%;
+  color: #FCE181;
 }
 footer p {
   margin: 1% auto;
@@ -175,6 +209,22 @@ footer p {
 .features img {
   width: 50%;
   height: 50vh;
+  margin: 2%;
+  border: 4px solid #FEF9C7;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .features img {
+    display: none;
+  }
+}
+.features p {
+  margin: 1%;
+}
+@media (max-width: 500px) {
+  .features p {
+    font-size: 1.8rem;
+  }
   padding: 2%;
 }
 .book {
@@ -184,6 +234,15 @@ footer p {
   text-align: center;
   font-size: 2.2rem;
 }
+.book h3,
+.book h4 {
+  color: black;
+}
+.book span {
+  color: #FCE181;
+  font-size: 2rem;
+}
+
 .book .books {
   display: flex;
   flex-flow: wrap;
@@ -192,4 +251,39 @@ footer p {
 .book .books article {
   margin: 3% 5%;
   width: 20%;
+}
+.book .books article .shrink {
+  width: 44%;
+}
+@media (max-width: 800px) {
+  .book .books article .shrink {
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  .book .books article .shrink {
+    width: 100%;
+  }
+}
+.pg2content {
+  display: flex;
+  flex-flow: wrap;
+  margin: 5%;
+  justify-content: center;
+}
+.pg2content div {
+  align-items: center;
+  width: 30%;
+  margin: 4% 4% 0;
+}
+.pg2content div img {
+  width: 65%;
+  border-radius: 20%;
+  margin: 3% auto;
+}
+.pg2content div .adjimg {
+  height: 37.5vh;
+}
+.pg2content div p {
+  margin: 10% auto auto 3%;
 }
