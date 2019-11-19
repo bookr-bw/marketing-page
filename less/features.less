@@ -1,19 +1,27 @@
 .features{
     text-align: center;
     h2{
-        font-size: 2.1rem;
-        margin: 1%;
+        font-size:2.6rem;
     }
     img{
     width: 50%;
     height: 50vh;
     margin: 2%;
-    border: 3px solid @border;
+    border: 4px solid @border;
     border-radius:10px;
+
+    @media @mobile{
+        display:none;
+    }
+
     }
     p{
         margin:1%;
+        @media @mobile{
+            font-size: 1.8rem;
+        }
     }
+   
  }
 
  
