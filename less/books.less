@@ -5,6 +5,7 @@
     }
     h3, h4{
         color:black;
+        margin-top: 3%;
     }
     span{
         color:@lighter;
@@ -18,15 +19,8 @@
         article{
             margin: 3% 5%;
             width: 20%;
-
-            .shrink{
-                width: 44%;
-                @media @tablet{
-                    width:65%;
-                }
-                @media @mobile{
-                    width:100%;
-                }
+            @media @mobile{
+                width: 40%;
             }
         }
     }
