@@ -137,14 +137,14 @@ html body {
 html body .container {
   background-color: #EDEAE5;
   color: #026670;
+  text-align: center;
 }
 html body .container h2 {
-  font-size: 2.1rem;
+  font-size: 2.8rem;
   padding: 4%;
 }
 header {
   text-align: center;
-  background-color: #026670;
 }
 header nav {
   margin: 3% auto;
@@ -187,9 +187,6 @@ footer p {
 }
 .features {
   text-align: center;
-}
-.features h2 {
-  font-size: 2.6rem;
 }
 .features img {
   width: 50%;
@@ -234,4 +231,17 @@ footer p {
 .book .books article {
   margin: 3% 5%;
   width: 20%;
+}
+.book .books article .shrink {
+  width: 44%;
+}
+@media (max-width: 800px) {
+  .book .books article .shrink {
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  .book .books article .shrink {
+    width: 100%;
+  }
 }
